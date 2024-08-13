@@ -1,18 +1,73 @@
 body {
-    background-color: rgb(46, 46, 176);
+    background-color: rgba(11, 11, 90, 0.8);
+
 }
+
 header{
     color: white;
     text-align: center;
 }
 
-section {
+section {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
     background: white;
     border-radius: 10px;
     padding: 15px;
-    width: 500px;
-    margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.731);
+}
+
+form {
+    padding: 15px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.btn-verificar {
+    cursor: pointer;
+    background-color: rgba(11, 11, 90, 0.8);
+    border: none;
+    border-radius: 5px;
+    width: 140px;
+    height: 30px;
+    color: aliceblue;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn-verificar:hover {
+    opacity: 0.8;
+}
+
+label {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+#res {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+img{
+    padding: 15px;
+}
+
+#txtano {
+    width: 15%;
+    height: 10%;
+    text-align: center;
+    font-weight: bold;
 }
 
 footer {
@@ -25,6 +80,8 @@ img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-
 }
 
+.form-input{
+    margin: 2rem 0;
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,29 +8,31 @@
     <title>Verificador de idade</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <header>
         <h1>Verificador de Idade</h1>
     </header>
     <section>
-        <div>
-            <p>Informe seu ano de nascimento: 
-                <input type="number" name="txtano" id="txtano" min="0" max="2023">
-            </p>
-            <p>
-                Sexo:
-                <input type="radio" name="radsex" id="radsex" id="mas" checked>
-                <label for="mas">Masculino</label>
-                <input type="radio" name="radsex" id="fem">
-                <label for="fem">Feminino</label>
-            </p>
-            <p>
-                <input type="button" value="Verificar" onclick="verificar()">
-            </p>
-        </div>
+        <div class="content">
+            <form>
+                <div class="form-input">
+                    <label>Informe seu ano de nascimento:</label>
+                    <input type="number" name="txtano" id="txtano" min="1800" max="2024">
+                </div>
+                <div class="form-input">
+                    <label>Sexo:</label>
+                    <input type="radio" name="radsex" id="radsex" id="mas" checked>
+                    <label for="mas">Masculino</label>
+                    <input type="radio" name="radsex" id="fem">
+                    <label for="fem">Feminino</label>
+                </div>
+                <input class="btn-verificar" type="button" value="Verificar" onclick="verificar()">
+            </form>
             <div id="res">
                 <p>Preencha os campos acima para ver o resultado!</p>
             </div>
+        </div>
     </section>
     <footer>
         <p>Matheus Fernandes Jaconis </p>
@@ -37,4 +40,5 @@
 
     <script src="./script.js"></script>
 </body>
+
 </html>
